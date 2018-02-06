@@ -1,0 +1,17 @@
+# python
+
+venv/
+venv[1-9]/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.idea/workspace.xml
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+
+

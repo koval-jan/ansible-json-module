@@ -1,0 +1,45 @@
+* Ansible json module
+
+Inspired by ansible-ghetto-json.
+
+** Installation
+
+Copy json_module into playbook's library folder (./library).
+
+** Configuration sample
+
+#+NAME: 
+#+BEGIN_SRC yaml
+
+- name: test
+  json_module:
+    path: "test.json"
+    changes:
+      - type: "set"
+        path: "z.x.test\\.ads\\.1"
+        value: 1
+      
+      - type: "set"
+        path: "z.x.test\\.ads\\.2"
+        value: 2
+      
+      - type: "set"
+        path: "a"
+        value: 7
+      
+      - type: "unset"
+        path: "a"
+      
+      - type: "append"
+        path: "x"
+        value: "1"
+      
+      - type: "extend"
+        path: "x"
+        values: 
+          - 1
+          - 2
+          - 3
+
+#+END_SRC
+
